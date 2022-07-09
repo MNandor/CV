@@ -1,0 +1,124 @@
+% includes
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{titlesec}
+\usepackage[a4paper, margin=1.5cm]{geometry}
+\usepackage{hyperref}
+\usepackage{amsthm}
+\usepackage[most]{tcolorbox}
+\usepackage{graphicx}
+\usepackage{svg}
+
+
+% style of hyperlinks
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan
+    }
+
+\urlstyle{same}
+
+
+% how headers look
+\titleformat{\section}{\hide}{}{-1in}{}
+\titleformat{\subsection}{\bfseries \large}{}{0em}{}%{$\bullet$ }
+
+
+% define icons
+\newcommand\fstar{\includesvg[scale=0.5]{icon/fstar} \>}
+\newcommand\lstar{\includesvg[scale=0.5]{icon/lstar} \>}
+\newcommand\mstar{\includesvg[scale=0.5]{icon/mstar} \>}
+
+\newcommand\fstars{\includesvg[scale=0.3]{icon/fstar} \>}
+\newcommand\lstars{\includesvg[scale=0.3]{icon/lstar} \>}
+\newcommand\mstars{\includesvg[scale=0.3]{icon/mstar} \>}
+
+
+% Cool graphic: section markers on left side
+\newcommand\makesection[2]{
+	\newtcolorbox{#1}{
+		freelance,
+		width=\dimexpr\textwidth+28pt\relax,
+		before=\par\vspace{\bigskipamount}\noindent,
+		enlarge left by=-14pt,
+		overlay unbroken and first={
+		  \draw[ % main line
+		  line width=2pt,
+		  black
+		  ] ([xshift=4pt]frame.north west) -- ([xshift=4pt]frame.south west);
+		  \draw[ % top horizontal
+		  line width=2pt,
+		  black
+		  ] ([xshift=3pt]frame.north west) -- ([xshift=8pt]frame.north west);
+		  \draw[ % bottom horizontal
+		  line width=2pt,
+		  black
+		  ] ([xshift=3pt]frame.south west) -- ([xshift=8pt]frame.south west);
+		  \node[
+		  anchor=east,
+		  inner xsep=8pt,
+		  xshift=8pt,
+		  font=\bfseries,
+		  fill=white] at ([xshift=0.3cm]frame.west) (tit) { \rotatebox[origin=c]{90}{ \large{#2}  }};
+		},
+		frame code={},
+		interior code={},
+		top=0pt,
+		bottom=0pt
+	}
+}
+
+
+% section markers need to defined manually
+\makesection{sectworkexp}{Work Experience}
+\makesection{sectprojects}{Notable Projects}
+\makesection{secteducation}{Education}
+\makesection{sectprogrammingskills}{Programming Skills}
+\makesection{sectsoftskills}{Soft Skills}
+\makesection{sectlanguages}{Languages}
+
+
+\begin{document}
+
+
+% personal info
+% note: using \include instead of \input causes the included part to take up a whole page
+\input{personal.tex}
+
+
+% plaintext summary/bio
+\input{summary.tex}
+
+
+\begin{sectworkexp}
+	\input{sWorkExperience.tex}
+\end{sectworkexp}
+
+\begin{sectprojects}
+	\input{sProjects.tex}
+\end{sectprojects}
+
+\begin{secteducation}
+	\input{sEducation.tex}
+\end{secteducation}
+
+\newpage
+
+\begin{sectprogrammingskills}
+	\input{sProgramming.tex}
+\end{sectprogrammingskills}
+
+\newpage
+
+\begin{sectsoftskills}
+	\input{sSoftSkills.tex}
+\end{sectsoftskills}
+
+\begin{sectlanguages}
+	\input{sLanguages.tex}
+\end{sectlanguages}
+
+\end{document}
+
