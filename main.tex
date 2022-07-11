@@ -20,6 +20,12 @@
 
 \urlstyle{same}
 
+% want a one-page CV? switch the comment between these lines
+% if the \iffalse version is uncommented, \fluff blocks are hidden
+% see below for examples
+\newcommand\fluff{\iftrue}
+% \newcommand\fluff{\iffalse}
+
 
 % how headers look
 \titleformat{\section}{\hide}{}{-1in}{}
@@ -89,7 +95,9 @@
 
 
 % plaintext summary/bio
+\fluff
 \input{summary.tex}
+\fi
 
 
 \begin{sectworkexp}
@@ -104,13 +112,17 @@
 	\input{sEducation.tex}
 \end{secteducation}
 
+\fluff
 \newpage
+\fi
 
 \begin{sectprogrammingskills}
 	\input{sProgramming.tex}
 \end{sectprogrammingskills}
 
+\fluff
 \newpage
+\fi
 
 \begin{sectsoftskills}
 	\input{sSoftSkills.tex}
