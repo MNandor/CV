@@ -33,6 +33,12 @@
 \titleformat{\section}{\hide}{}{-1in}{}
 \titleformat{\subsection}{\bfseries \large}{}{0em}{}%{$\bullet$ }
 
+% formatting specific to one-page layout (smaller margins)
+\fluff
+\else
+\titlespacing{\subsection}{0pt}{0pt}{0pt}
+\addtolength{\topmargin}{-1cm}
+\fi
 
 % define icons
 \newcommand\fstar{\includesvg[scale=0.5]{icon/fstar} \>}
@@ -95,7 +101,6 @@
 	\makesection{sectprogrammingskills}{Coding Skills}
 	\makesection{sectsoftskills}{Soft Skills}
 	\makesection{sectlanguages}{Languages}
-	\addtolength{\topmargin}{-1cm}
 \fi
 
 
