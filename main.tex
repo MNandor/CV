@@ -78,12 +78,22 @@
 
 
 % section markers need to defined manually
-\makesection{sectworkexp}{Work Experience}
-\makesection{sectprojects}{Notable Projects}
-\makesection{secteducation}{Education}
-\makesection{sectprogrammingskills}{Programming Skills}
-\makesection{sectsoftskills}{Soft Skills}
-\makesection{sectlanguages}{Languages}
+\fluff
+	\makesection{sectworkexp}{Work Experience}
+	\makesection{sectprojects}{Notable Projects}
+	\makesection{secteducation}{Education}
+	\makesection{sectprogrammingskills}{Programming Skills}
+	\makesection{sectsoftskills}{Soft Skills}
+	\makesection{sectlanguages}{Languages}
+\else
+	% Some titles are shortened
+	\makesection{sectworkexp}{Experience}
+	\makesection{sectprojects}{Projects}
+	\makesection{secteducation}{Studies}
+	\makesection{sectprogrammingskills}{Coding Skills}
+	\makesection{sectsoftskills}{Soft Skills}
+	\makesection{sectlanguages}{Languages}
+\fi
 
 
 \begin{document}
