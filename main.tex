@@ -8,6 +8,7 @@
 \usepackage[most]{tcolorbox}
 \usepackage{graphicx}
 \usepackage{svg}
+\usepackage{multicol}
 
 
 % style of hyperlinks
@@ -135,6 +136,11 @@
 \newpage
 \fi
 
+\fluff
+\else
+\begin{multicols}{2}
+\fi
+
 \begin{sectsoftskills}
 	\input{sSoftSkills.tex}
 \end{sectsoftskills}
@@ -142,6 +148,11 @@
 \begin{sectlanguages}
 	\input{sLanguages.tex}
 \end{sectlanguages}
+
+\fluff
+\else
+\end{multicols}
+\fi
 
 \end{document}
 
