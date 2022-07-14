@@ -7,10 +7,11 @@
    viewBox="0 0 10 10"
    version="1.1"
    id="svg5"
-   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
    sodipodi:docname="mstar.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <sodipodi:namedview
@@ -24,26 +25,50 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="9.2078563"
-     inkscape:cx="6.4618732"
-     inkscape:cy="22.317898"
+     inkscape:cx="0.16290437"
+     inkscape:cy="22.263597"
      inkscape:window-width="1920"
-     inkscape:window-height="1019"
+     inkscape:window-height="1056"
      inkscape:window-x="0"
-     inkscape:window-y="27"
+     inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1"
-     inkscape:lockguides="false" />
+     inkscape:lockguides="false"
+     inkscape:showpageshadow="0"
+     inkscape:deskcolor="#d1d1d1" />
   <defs
-     id="defs2" />
+     id="defs2">
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#Strips1_2"
+       id="pattern3023"
+       patternTransform="matrix(1.0606329,0.93929969,-8.5088824,9.6080097,0,0)" />
+    <pattern
+       inkscape:collect="always"
+       patternUnits="userSpaceOnUse"
+       width="3"
+       height="1"
+       patternTransform="translate(0,0) scale(10,10)"
+       id="Strips1_2"
+       inkscape:stockid="Stripes 1:2">
+      <rect
+         style="fill:black;stroke:none"
+         x="0"
+         y="-0.5"
+         width="1"
+         height="2"
+         id="rect1852" />
+    </pattern>
+  </defs>
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1">
     <path
        id="path1233"
-       style="fill:#404040;stroke:#000000;stroke-width:1.88976;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:1.74161;stroke-opacity:1;fill-opacity:0.00423386"
+       style="fill:url(#pattern3023);fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.88976;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:1.74161;stroke-opacity:1"
        inkscape:transform-center-y="-0.41656046"
-       d="M 28.53125 21.339844 C 30.940241 19.248561 35.058223 16.069062 34.808594 15.300781 C 34.465276 14.244159 24.71327 14.356154 23.814453 13.703125 C 22.915636 13.050096 20.009436 3.7402344 18.898438 3.7402344 C 17.885573 3.7402344 15.383384 11.45856 14.267578 13.320312 L 18.898438 21.339844 L 28.53125 21.339844 z "
+       d="m 28.53125,21.339844 c 2.408991,-2.091283 6.526973,-5.270782 6.277344,-6.039063 C 34.465276,14.244159 24.71327,14.356154 23.814453,13.703125 22.915636,13.050096 20.009436,3.7402344 18.898438,3.7402344 c -1.012865,0 -3.515054,7.7183256 -4.63086,9.5800776 l 4.63086,8.019532 z"
        transform="scale(0.26458333)" />
     <path
        id="path2156"
