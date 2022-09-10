@@ -1,3 +1,8 @@
+# CV
+
+My personal CV template.
+`latex`
+
 # How to use
 
 See **example.pdf** to preview what the CV will look like.
